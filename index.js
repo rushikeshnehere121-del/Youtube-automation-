@@ -13,7 +13,8 @@ setInterval(async () => {
   try {
     console.log("⏳ Running automation task...");
 
-    const channelId = "https://youtube.com/@trendz15?si=oh-KPMwYp3b0Xko2"; // 👈 Apna channel ID daalo
+    const channelId = "UCwvsB4kod7kCEI38ztljQ";
+    ; // 👈 Apna channel ID daalo
     const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${process.env.YOUTUBE_API_KEY}`;
 
     const res = await axios.get(url);
