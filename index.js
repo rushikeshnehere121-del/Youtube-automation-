@@ -8,11 +8,11 @@ app.get("/", (req, res) => {
   res.send("✅ YouTube Automation is running!");
 });
 
-// Har 1 minute pe kaam karega
+// Har 1 min mein automation task
 setInterval(async () => {
   try {
     console.log("⏳ Running automation task...");
-    // YouTube API ya koi aur logic yahan laga lo
+    // YouTube API call ya koi logic yahan daalo
   } catch (err) {
     console.error("❌ Error:", err.message);
   }
